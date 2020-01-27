@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>advanced exercise js</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<p id="demo"></p>	
+
+<script>
+	
+document.write = (function() {
+
+  var str = "i am a web developer";
+  var phrase = str.slice(1)
+  var res = str.charAt(0)
+  var cap = res.toUpperCase();
+
+ document.getElementById("demo").innerHTML = cap + phrase;
+}());
+
+
+</script>
+
+</body>
+</html>
