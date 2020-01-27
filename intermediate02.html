@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>advanced exercise js</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+
+<br/>
+
+<p>
+	Hello, please submit you grades in Math, Physics,and English.
+</p>
+<br/>
+  Math:<br>
+  <input type="text" id="math" value="">
+  <br>
+  Physics:<br>
+  <input type="text" id="physics" value="">
+  <br>
+  English:<br>
+  <input type="text" id="english" value="">
+  <br>
+  <br>
+  <input type="submit" onclick="evaluation()" value="submit">
+
+<br>
+
+<script>
+	
+function evaluation() {
+
+var math = document.getElementById("math").value 
+var physics= document.getElementById("physics").value 
+var english = document.getElementById("english").value 
+
+var sum = parseInt(math) + parseInt(physics) + parseInt(english);
+var average = sum / 3;
+
+document.write("The sum of your grades is: " + sum);
+document.write("<br/>");
+document.write("The average grade is: " + average);
+
+};
+
+</script>
+
+</body>
+</html>
