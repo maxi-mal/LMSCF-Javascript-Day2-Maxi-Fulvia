@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Day2</title>
+</head>
+<body>
+	
+<h1>hello</h1>
+
+
+
+
+
+<script>
+function CrystalGazer() {
+
+var number_childrens = 3;
+var job_title = "driver";
+var location = "Italy";
+var partners_name = "Mario";
+
+
+document.write("You will be a "+ job_title + " in " + location + " and married to " + partners_name + " with " +number_childrens + " children.");
+
+}
+
+CrystalGazer();
+
+document.write("<br/>");
+
+function AgeCalculator(x,y) {
+	var birthyear = x;
+	var currentyear = y;
+	var age = y-x;
+	var monthLess = age-1;
+
+document.write("You are either " + age + " or " + monthLess + ".");		
+}
+
+AgeCalculator(1991,2020);
+
+document.write("<br/>");
+
+
+function AgeCalculator2(x) {
+	var birthyear = x;
+	var z = new Date();
+	var y= z.getFullYear();
+	var age = y-x;
+	var monthLess = age-1;
+
+document.write("You are either " + age + " or " + monthLess + ".");	
+
+}
+
+AgeCalculator2(1978);
+
+document.write("<br/>");
+
+
+function conversion(degrees) {
+	var radians = degrees * (Math.PI/180);
+
+document.write("If you pass " + degrees + " you have " + radians + " radians.");
+}
+
+conversion(90);
+
+//Create a JavaScript function that converts degrees to radians. The function accepts one argument, the degrees, and outputs the radians based on them. The formula for converting degrees to radians is: "degrees * (pi/180)" E.g. If user passes 90 degrees it should get the result of 1.57079 radians//
+
+document.write("<br/>");
+
+function box(width, height, depth){
+	var area = width * height;
+	var volume = width * height * depth;
+
+document.write("The area of the box is:" + area);
+document.write("<br/>");
+document.write("The volume of the box is:" + volume);
+}
+
+box(7, 2, 5);
+
+</script>
+</body>
+</html>
