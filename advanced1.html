@@ -10,37 +10,28 @@
 <br/>
 
 <p>
-	Hello, please submit you grades in Math, Physics,and English.
+	Hello, please submit a random amount of minutes. I will convert it in hours and minutes.
 </p>
 <br/>
-  Math:<br>
-  <input type="text" id="math" value="">
-  <br>
-  Physics:<br>
-  <input type="text" id="physics" value="">
-  <br>
-  English:<br>
-  <input type="text" id="english" value="">
+ Minutes:<br>
+  <input type="text" id="minutes" value="">
   <br>
   <br>
-  <input type="submit" onclick="evaluation()" value="submit">
+  <input type="submit" onclick="convert()" value="submit">
 
 <br>
 
 <script>
 	
-function evaluation() {
+function convert() {
 
-var math = document.getElementById("math").value 
-var physics= document.getElementById("physics").value 
-var english = document.getElementById("english").value 
+var min = document.getElementById("minutes").value;
+var mnt = parseInt(min);
+var hour = Math.floor(mnt / 60);
+rest = mnt - hour * 60;
 
-var sum = parseInt(math) + parseInt(physics) + parseInt(english);
-var average = sum / 3;
-
-document.write("The sum of your grades is: " + sum);
+document.write(hour + "hours and " + rest +"minutes");
 document.write("<br/>");
-document.write("The average grade is: " + average);
 
 };
 
